@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rafikova_Autoservice", "Rafikova_Autoservice\Rafikova_Autoservice.csproj", "{30990075-3CB3-42CC-9775-274701598612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30990075-3CB3-42CC-9775-274701598612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30990075-3CB3-42CC-9775-274701598612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30990075-3CB3-42CC-9775-274701598612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30990075-3CB3-42CC-9775-274701598612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C18BF0C2-43B8-4C60-A636-9A964CE9428D}
+	EndGlobalSection
+EndGlobal
