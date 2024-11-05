@@ -76,7 +76,7 @@ namespace Rafikova_Autoservice
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddEditPage());
+            Manager.MainFrame.Navigate(new AddEditPage(null));
         }
 
         private void TBoxSearch_TextChanged(object sender, TextChangedEventArgs e)
@@ -97,6 +97,25 @@ namespace Rafikova_Autoservice
         private void RButtonDown_Checked(object sender, RoutedEventArgs e)
         {
             UpdateServices();
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage(null));
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Service));
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                rafikovaAutoserviceEntities2.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                ServiceListView.ItemsSource= rafikovaAutoserviceEntities2.GetContext().Service.ToList();
+            }
         }
     }
 }
